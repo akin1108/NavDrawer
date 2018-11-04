@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akin.myapplication.Famous">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+    <com.github.ivbaranov.mfb.MaterialFavoriteButton
+        android:id="@+id/favorite_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimary" />
+
+    <ImageButton
+        android:id="@+id/download_button"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_above="@+id/favorite_button"
+        android:layout_alignParentRight="true"
+        android:actionProviderClass="Downloads"
+        android:background="@color/colorPrimary"
+        android:src="@mipmap/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/share_button"
+        android:layout_width="45dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/download_button"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimary"
+        android:src="@mipmap/ic_launcher" />
+
+</RelativeLayout>
